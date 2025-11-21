@@ -1,0 +1,17 @@
+{
+    "name": "xmind/made-in-cameroon",
+    "description": "Dans un contexte où les produits locaux camerounais manquent de visibilité sur le marché, il devient essentiel de créer un espace numérique dédié à leur promotion. La plateforme « Made In Cameroun » a pour but de valoriser le savoir-faire local en facilitant la mise en relation entre les producteurs et les consommateurs, à travers une interface web moderne et accessible. Ce projet s’inscrit dans la dynamique du consommer local et du développement numérique du Cameroun.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Xmind\\MadeInCameroon\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ryan Neuville",
+            "email": "neuvilleryan123@gmail.com"
+        }
+    ],
+    "require": {}
+}
