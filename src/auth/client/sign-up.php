@@ -12,6 +12,11 @@
 <body>
     <div class="flex items-center justify-center h-screen p-4">
         <form action="">
+            <center class="mb-10">
+                <a href="../../../index.php">
+                    <img src="../../../public/logo/text-logo.png" class="w-32" alt="">
+                </a>
+            </center>
             <fieldset class="fieldset bg-base-200 border-base-300 rounded-box border p-4">
 
                 <legend class="fieldset-legend"><img src="../../../public/logo/logo.png" class="w-8 h-8"
@@ -49,7 +54,7 @@
                 <input type="email" class="input w-full" placeholder="+237 665 12 34 56" required />
 
                 <button type="submit" class="btn btn-success mt-4">Inscription</button>
-                <span>Avez vous deja un compte ? <a href="../client/sign-up.php"
+                <span>Avez vous deja un compte ? <a href="../client/login.php"
                         class="text-success">Connectez-vous</a></span>
             </fieldset>
         </form>

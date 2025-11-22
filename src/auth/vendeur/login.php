@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../../public/logo/logo.png">
     <link rel="stylesheet" href="../../../public/output.css">
-    <title>Connexion - Client</title>
+    <title>Connexion - Vendeur</title>
 </head>
 
 <body>
@@ -18,7 +18,8 @@
                 </a>
             </center>
             <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-                <legend class="fieldset-legend"><img src="../../../public/logo/logo.png" class="w-8 h-8" alt="">Connexion Client</legend>
+                <legend class="fieldset-legend"><img src="../../../public/logo/logo.png" class="w-8 h-8"
+                        alt="">Connexion Vendeur</legend>
 
                 <label class="label">Email</label>
                 <input type="email" class="input" placeholder="Email" required />
@@ -27,12 +28,12 @@
                 <input type="password" class="input" placeholder="Password" required />
 
                 <button type="submit" class="btn btn-success mt-4">Se Connecter</button>
-                <span>Vous n'avez pas de compte ? <a href="../vendeur/sign-up.php" class="text-success">Inscrivez-vous</a></span>
+                <span>Vous n'avez pas de compte ? <a href="../vendeur/sign-up.php"
+                        class="text-success">Inscrivez-vous</a></span>
             </fieldset>
         </form>
     </div>
-
-
+    <?php include_once '../../views/footer.php'; ?>
 </body>
-<?php include_once '../../../src/views/footer.php'; ?>
+
 </html>

@@ -39,9 +39,9 @@
             </div>
             <div class="flex gap-2">
                 <button class="btn btn-success"
-                    onclick="window.location.href='../../src/auth/producteur/login.php'">Connexion</button>
+                    onclick="window.location.href='../../src/auth/vendeur/login.php'">Connexion</button>
                 <button class="btn btn-warning"
-                    onclick="window.location.href='../../src/auth/producteur/sign-up.php'">Inscription</button>
+                    onclick="window.location.href='../../src/auth/vendeur/sign-up.php'">Inscription</button>
             </div>
         </div>
     </section>
