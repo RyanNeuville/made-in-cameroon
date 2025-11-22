@@ -1,4 +1,4 @@
-<footer class="footer sm:footer-horizontal bg-success text-base-content p-10 text-white text-md">
+<footer class="mt-20 footer sm:footer-horizontal bg-success text-base-content p-10 text-white text-md">
     <aside>
         <img src="public/logo/text-logo.png" class="w-32" alt="">
         <p>
