@@ -2,7 +2,7 @@
 $products = [
     "produit-1" => [
         "image" => "public/images/produits/produit-1.avif",
-        "label" => "Produit 1",
+        "label" => "Confirture",
         "description" => "Description du produit 1",
         "categories" => "Agroalimentaire",
         "star" => 4.1,
@@ -11,7 +11,7 @@ $products = [
     ],
     "produit-2" => [
         "image" => "public/images/produits/produit-2.jpg",
-        "label" => "Produit 2",
+        "label" => "Panier",
         "description" => "Description du produit 2",
         "categories" => "Artisanat",
         "star" => 4.5,
@@ -20,7 +20,7 @@ $products = [
     ],
     "produit-3" => [
         "image" => "public/images/produits/produit-3.jpeg",
-        "label" => "Produit 3",
+        "label" => "Pagne broder",
         "description" => "Description du produit 3",
         "categories" => "Mode",
         "star" => 4.8,
@@ -29,7 +29,7 @@ $products = [
     ],
     "produit-4" => [
         "image" => "public/images/produits/produit-4.jpg",
-        "label" => "Produit 4",
+        "label" => "parfum",
         "description" => "Description du produit 4",
         "categories" => "Cosmatique",
         "star" => 4.2,
@@ -38,7 +38,7 @@ $products = [
     ],
     "produit-5" => [
         "image" => "public/images/produits/produit-5.jpg",
-        "label" => "Produit 5",
+        "label" => "Huile d'olive",
         "description" => "Description du produit 5",
         "categories" => "Agroalimentaire",
         "star" => 3.9,
@@ -47,7 +47,7 @@ $products = [
     ],
     "produit-6" => [
         "image" => "public/images/produits/produit-6.avif",
-        "label" => "Produit 6",
+        "label" => "Vase portable",
         "description" => "Description du produit 6",
         "categories" => "Artisanat",
         "star" => 4.5,
