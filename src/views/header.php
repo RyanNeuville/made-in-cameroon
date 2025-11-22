@@ -70,7 +70,7 @@ $menu = [
                 </div>
             </div>
         </div>
-        <button class="btn btn-success rounded-full hover:text-white">Connexion</button>
+        <button class="btn btn-success rounded-full hover:text-white" onclick="window.location.href='src/auth/index.php'">Connexion</button>
     </div>
 </header>
 
