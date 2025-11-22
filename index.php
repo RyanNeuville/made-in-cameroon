@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="public/output.css" />
 </head>
 
-<body class="bg-success/20">
+<body >
   <?php include_once 'src/views/header.php'; ?>
   <section class="flex mt-20 p-6 gap-10 bg-success flex-col md:flex-row">
     <div class="flex flex-col gap-5">
@@ -33,6 +33,12 @@
       <img src="public/images/femme-africaine-vetements-nationaux.avif" class="w-full h-full object-cover rounded-4xl" alt="">
     </div>
   </section>
+
+  <!-- Sections presenter les cotegories (Agroalimentaire, artisanat, Mode, Cosmatique)  -->
+  <?php include_once 'src/views/categories.php'; ?>
+
+  <!-- Sections de presentation de produits -->
+   <?php include_once 'src/views/products.php'; ?>
 </body>
 
 </html>
