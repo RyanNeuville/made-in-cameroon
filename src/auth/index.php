@@ -19,23 +19,29 @@
         <div class="flex gap-5 flex-col p-10 border-success border-2 border-dashed rounded-lg shadow-lg w-90">
             <div>
                 <span class="font-bold">Je suis un client</span>
-                <p class="text-[12px] text-gray-500/50">Je veux decouvrir les produits et valoriser le travail de mon pays</p>
+                <p class="text-[12px] text-gray-500/50">Je veux decouvrir les produits et valoriser le travail de mon
+                    pays</p>
             </div>
             <div class="flex gap-2">
-                <button class="btn btn-success" onclick="window.location.href='../../src/auth/client/login.php'">Connexion</button>
-                <button class="btn btn-warning" onclick="window.location.href='../../src/auth/client/sign-up.php'">Inscription</button>
+                <button class="btn btn-success"
+                    onclick="window.location.href='../../src/auth/client/login.php'">Connexion</button>
+                <button class="btn btn-warning"
+                    onclick="window.location.href='../../src/auth/client/sign-up.php'">Inscription</button>
             </div>
         </div>
 
         <div class="flex gap-5 flex-col p-10 border-success border-2 border-dashed rounded-lg shadow-lg w-90">
             <div>
                 <span class="font-bold">Je suis un producteur</span>
-                <p class="text-[12px] text-gray-500/50">Je veux valoriser mon travail et mon savoir faire avec mes produits de qualites
+                <p class="text-[12px] text-gray-500/50">Je veux valoriser mon travail et mon savoir faire avec mes
+                    produits de qualites
                 </p>
             </div>
             <div class="flex gap-2">
-                <button class="btn btn-success" onclick="window.location.href='../../src/auth/producteur/login.php'">Connexion</button>
-                <button class="btn btn-warning" onclick="window.location.href='../../src/auth/producteur/sign-up.php'">Inscription</button>
+                <button class="btn btn-success"
+                    onclick="window.location.href='../../src/auth/producteur/login.php'">Connexion</button>
+                <button class="btn btn-warning"
+                    onclick="window.location.href='../../src/auth/producteur/sign-up.php'">Inscription</button>
             </div>
         </div>
     </section>
