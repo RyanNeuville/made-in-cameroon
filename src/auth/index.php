@@ -32,7 +32,7 @@
 
         <div class="flex gap-5 flex-col p-10 border-success border-2 border-dashed rounded-lg shadow-lg w-90">
             <div>
-                <span class="font-bold">Je suis un producteur</span>
+                <span class="font-bold">Je suis un vendeur</span>
                 <p class="text-[12px] text-gray-500/50">Je veux valoriser mon travail et mon savoir faire avec mes
                     produits de qualites
                 </p>
