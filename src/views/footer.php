@@ -1,4 +1,4 @@
-<footer class="mt-20 footer sm:footer-horizontal bg-success text-base-content p-10 text-white text-md">
+<footer class="mt-20 footer sm:footer-horizontal bg-success text-base-content p-10 text-gray-900 text-md">
     <aside>
         <img src="public/logo/text-logo.png" class="w-32" alt="">
         <p>
@@ -27,21 +27,21 @@
         </div>
     </aside>
     <nav>
-        <h6 class="footer-title">Liens Rapides</h6>
+        <h6 class="footer-title font-bold">Liens Rapides</h6>
         <a class="link link-hover">Accueil</a>
         <a class="link link-hover">Produits</a>
         <a class="link link-hover">Contact</a>
         <a class="link link-hover">A propos</a>
     </nav>
     <nav>
-        <h6 class="footer-title">Informations</h6>
+        <h6 class="footer-title font-bold">Informations</h6>
         <a class="link link-hover">A propos</a>
         <a class="link link-hover">Contact</a>
         <a class="link link-hover">Conditions d'utilisation</a>
         <a class="link link-hover">Politique de confidentialite</a>
     </nav>
     <nav>
-        <h6 class="footer-title">Legal</h6>
+        <h6 class="footer-title font-bold">Legal</h6>
         <a class="link link-hover">Mentions legales</a>
         <a class="link link-hover">Privacy policy</a>
         <a class="link link-hover">Cookie policy</a>
