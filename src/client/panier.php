@@ -94,4 +94,4 @@ require_once '../includes/head.php'; ?>
         </aside>
     </div>
 </main>
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once '../views/footer.php'; ?>
