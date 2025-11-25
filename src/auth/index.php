@@ -1,3 +1,4 @@
+<?php include_once '../../src/includes/head.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 

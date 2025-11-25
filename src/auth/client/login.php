@@ -27,7 +27,7 @@
                 <input type="password" class="input" placeholder="Password" required />
 
                 <button type="submit" class="btn btn-success mt-4">Se Connecter</button>
-                <span>Vous n'avez pas de compte ? <a href="../vendeur/sign-up.php" class="text-success">Inscrivez-vous</a></span>
+                <span>Vous n'avez pas de compte ? <a href="../client/sign-up.php" class="text-success">Inscrivez-vous</a></span>
             </fieldset>
         </form>
     </div>
