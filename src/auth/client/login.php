@@ -1,8 +1,68 @@
 <?php
 session_start();
 $page_title = "Connexion - Client";
-include_once "../../../config/db_connect.php"
-    ?>
+require_once '../../../config/db_connect.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Recuperation de l'utilisateur (Requete Preparee pour empêcher l'injection SQL)
+    $stmt = mysqli_prepare($conn, "SELECT user_id, password_hash, role_id, first_name FROM users WHERE email = ?");
+
+    // Liage du paramètre 's' pour string
+    mysqli_stmt_bind_param($stmt, "s", $email);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+    $user = mysqli_fetch_assoc($result);
+    mysqli_stmt_close($stmt);
+
+    // Verification de l'utilisateur et du mot de passe
+    if ($user) {
+        if (password_verify($password, $user['password_hash'])) {
+            // Mot de passe correct. Connexion reussie.
+
+            // Securite de la Session : Regeneration de l'ID
+            session_regenerate_id(true);
+
+            // Initialisation des variables de session
+            $_SESSION['loggedin'] = true;
+            $_SESSION['user_id'] = $user['user_id'];
+            $_SESSION['role_id'] = $user['role_id'];
+            $_SESSION['first_name'] = $user['first_name'];
+
+            // Redirection basee sur le role 
+            $redirect_page = '../../client/index.php';
+
+            if ($user['role_id'] == ROLE_ADMIN) {
+                $redirect_page = '../../admin/index.php';
+            } elseif ($user['role_id'] == ROLE_VENDEUR) {
+                $redirect_page = '../../vendeur/index.php';
+            }
+
+            $_SESSION['message'] = "Bienvenue, " . $user['first_name'] . " !";
+            $_SESSION['message_type'] = "success";
+            header("location: $redirect_page");
+            exit;
+
+        } else {
+            // Mot de passe incorrect
+            $_SESSION['message'] = "Identifiants invalides ou mot de passe incorrect.";
+            $_SESSION['message_type'] = "error";
+        }
+    } else {
+        // Utilisateur non trouve
+        $_SESSION['message'] = "Identifiants invalides ou cet email n'existe pas.";
+        $_SESSION['message_type'] = "error";
+    }
+
+    // Redirection vers la page de connexion en cas d'échec
+    header("location: login.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

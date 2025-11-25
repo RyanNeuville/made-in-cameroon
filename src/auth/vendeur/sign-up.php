@@ -26,12 +26,12 @@
                 <div class="flex gap-2 w-full">
                     <div>
                         <label class="label">Votre nom ?</label>
-                        <input type="password" class="input" placeholder="louis albert" required />
+                        <input type="text" class="input" placeholder="louis albert" required />
                     </div>
 
                     <div>
                         <label class="label">Votre prenom ?</label>
-                        <input type="password" class="input" placeholder="ryan feussi" required />
+                        <input type="text" class="input" placeholder="ryan feussi" required />
                     </div>
                 </div>
 
