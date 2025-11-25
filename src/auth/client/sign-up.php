@@ -3,7 +3,7 @@ session_start();
 $page_title = "Inscription - Client";
 
 include_once "../../../config/db_connect.php"
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,7 +65,8 @@ include_once "../../../config/db_connect.php"
                 <label class="label">Numero de telephone</label>
                 <input type="email" class="input w-full" placeholder="+237 665 12 34 56" required />
 
-                <button type="submit" class="btn btn-lg w-full bg-success hover:bg-success/80 text-white font-semibold border-none">Inscription</button>
+                <button type="submit"
+                    class="btn btn-lg w-full bg-success hover:bg-success/80 text-white font-semibold border-none">Inscription</button>
                 <span>Avez vous deja un compte ? <a href="../client/login.php"
                         class="text-success">Connectez-vous</a></span>
             </fieldset>
