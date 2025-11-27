@@ -1,3 +1,8 @@
+<?php
+include_once "../../../config/db_connect.php";
+session_start();
+$page_title = "Inscription Vendeur";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
