@@ -214,10 +214,13 @@ require_once '../includes/navbar_client.php';
                                 <div class="card-actions justify-end mt-4">
                                     <a href="produit_detail.php?id=<?= $product['product_id'] ?>"
                                         class="btn btn-sm btn-outline btn-info">Voir Détails</a>
-                                    <button class="btn btn-sm btn-success text-white" <?= $stock_out ? 'disabled' : '' ?>
-                                        onclick="addToCart(<?= $product['product_id'] ?>)">
-                                        <i class="fa fa-shopping-cart"></i> Ajouter
-                                    </button>
+                                    <form method="POST" action="traitement_panier.php" style="display:inline;">
+                                        <input type="hidden" name="product_id" value="<?= $product['product_id'] ?>">
+                                        <button type="submit" name="action" value="add"
+                                            class="btn btn-sm btn-success text-white" <?= $stock_out ? 'disabled' : '' ?>>
+                                            <i class="fa fa-shopping-cart"></i> Ajouter
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
