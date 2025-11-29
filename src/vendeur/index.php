@@ -8,8 +8,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['role_id'] != ROLE_VENDEUR) {
     exit;
 }
 
-$page_title = "Tableau de Bord Vendeur";
-$title = "Dashboard - Vendeur";
+$title = "Tableau de Bord Vendeur";
 $user_id = $_SESSION['user_id'];
 $vendeur_id = null; // Sera récupéré ci-dessous
 

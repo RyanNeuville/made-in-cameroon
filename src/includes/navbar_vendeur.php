@@ -5,9 +5,9 @@ $title = "Dashboard - Vendeur";
 
 $menu = [
     "index.php" => "Accueil",
-    "mes_produits.php" => "Mes Produits",
-    "commandes.php.php" => "Commandes",
-    "mon_profil.php" => "Mon Profil Vendeur",
+    "produits.php" => "Mes Produits",
+    "commandes.php" => "Commandes",
+    "profil.php" => "Mon Profil Vendeur",
 ];
 
 ?>
