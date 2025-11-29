@@ -2,6 +2,11 @@
 session_start();
 require_once '../../config/db_connect.php';
 
+if (!isset($_SESSION['loggedin']) || $_SESSION['role_id'] != ROLE_CLIENT) {
+    header("location: ../src/auth/client/login.php");
+    exit;
+}
+
 // --- Configuration des paramètres de la page ---
 $page_title = "Catalogue des Produits Locaux";
 $limit = 9; // Nombre de produits par page

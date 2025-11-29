@@ -4,7 +4,7 @@ require_once '../../config/db_connect.php';
 
 // Vérification de l'authentification
 if (!isset($_SESSION['loggedin']) || $_SESSION['role_id'] != ROLE_CLIENT) {
-    header("location: connexion_client.php");
+    header("location: ../src/auth/client/login.php");
     exit;
 }
 

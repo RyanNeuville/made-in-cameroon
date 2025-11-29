@@ -2,6 +2,11 @@
 session_start();
 require_once '../../config/db_connect.php';
 
+if (!isset($_SESSION['loggedin']) || $_SESSION['role_id'] != ROLE_CLIENT) {
+    header("location: ../src/auth/client/login.php");
+    exit;
+}
+
 // Vérification de l'authentification et d'un panier non vide
 if (!isset($_SESSION['loggedin']) || $_SESSION['role_id'] != ROLE_CLIENT || !isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
     header("Location: client_panier.php");

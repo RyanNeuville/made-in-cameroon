@@ -1,6 +1,10 @@
 <?php
 session_start();
 require_once '../../config/db_connect.php';
+if (!isset($_SESSION['loggedin']) || $_SESSION['role_id'] != ROLE_CLIENT) {
+    header("location: ../src/auth/client/login.php");
+    exit;
+}
 
 // Redirection si l'utilisateur n'est pas connecté ou si la méthode POST n'est pas utilisée
 if (!isset($_SESSION['loggedin']) || $_SESSION['role_id'] != ROLE_CLIENT || $_SERVER['REQUEST_METHOD'] !== 'POST') {

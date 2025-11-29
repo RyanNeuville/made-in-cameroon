@@ -10,4 +10,12 @@
     <link rel="icon" href="../../public/logo/logo.png">
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="../../public/output.css" />
+
+    <style>
+        /* Définition des images pour Tailwind, si elles ne sont pas dans tailwind.config.js */
+        .bg-artisan { background-image: url('/images/artisan.jpg'); }
+        .bg-sculpture { background-image: url('/images/scuplture.jpg'); }
+        .bg-cafe { background-image: url('/images/cafe.jpg'); }
+        .bg-savon { background-image: url('/images/savon.jpg'); }
+    </style>
 </head>

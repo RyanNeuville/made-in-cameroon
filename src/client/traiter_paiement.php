@@ -2,6 +2,11 @@
 session_start();
 require_once '../../config/db_connect.php';
 
+if (!isset($_SESSION['loggedin']) || $_SESSION['role_id'] != ROLE_CLIENT) {
+    header("location: ../src/auth/client/login.php");
+    exit;
+}
+
 // Vérification de l'authentification et de la méthode POST
 if (!isset($_SESSION['loggedin']) || $_SESSION['role_id'] != ROLE_CLIENT || $_SERVER['REQUEST_METHOD'] !== 'POST') {
     header("Location: catalogue.php");
