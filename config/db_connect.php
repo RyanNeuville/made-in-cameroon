@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 
 
 // Informations de connexion MySQL
-define('DB_SERVER', 127.0.0.1');
+define('DB_SERVER', '127.0.0.1');
 define('DB_USERNAME', 'codedrill');
 define('DB_PASSWORD', 'Codedrill@237');
 define('DB_NAME', 'made-in-cameroon');
