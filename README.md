@@ -33,7 +33,7 @@ Pour exécuter ce projet localement, vous devez avoir un environnement de serveu
 
     ```php
     // Fichier: config/db_connect.php
-    define('DB_SERVER', 'localhost');
+    define('DB_SERVER', '127.0.0.1');
     define('DB_USERNAME', 'root'); // Votre utilisateur DB
     define('DB_PASSWORD', '');     // Votre mot de passe DB
     define('DB_NAME', 'made_in_cameroun');

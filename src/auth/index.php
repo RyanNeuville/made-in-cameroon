@@ -1,4 +1,5 @@
-<?php include_once '../../src/includes/head.php' ?>
+<?php include_once '../../src/includes/head.php';
+$pagetitle = "Creation de compte"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../public/logo/logo.png">
-    <title>Creation de compte</title>
+    <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="../../public/output.css">
 </head>
 
@@ -48,4 +49,5 @@
     </section>
 
 </body>
+
 </html>

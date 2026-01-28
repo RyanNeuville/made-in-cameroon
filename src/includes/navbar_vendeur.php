@@ -1,12 +1,13 @@
 <?php
 include_once 'head.php';
 $current = basename($_SERVER['REQUEST_URI']);
+$title = "Dashboard - Vendeur";
 
 $menu = [
-    "index.php" => "Catalogue",
-    "mes_commandes.php" => "Mes commandes",
-    "mon_profil.php" => "Mon profil",
-    "panier.php" => "Panier",
+    "index.php" => "Accueil",
+    "produits.php" => "Mes Produits",
+    "commandes.php" => "Commandes",
+    "profil.php" => "Mon Profil Vendeur",
 ];
 
 ?>
